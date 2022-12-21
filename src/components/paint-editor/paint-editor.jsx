@@ -42,6 +42,8 @@ import zoomInIcon from './icons/zoom-in.svg';
 import zoomOutIcon from './icons/zoom-out.svg';
 import zoomResetIcon from './icons/zoom-reset.svg';
 
+console.log("mammoth-coding paint");
+
 const messages = defineMessages({
     bitmap: {
         defaultMessage: 'Convert to Bitmap',
