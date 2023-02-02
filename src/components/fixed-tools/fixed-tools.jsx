@@ -159,7 +159,7 @@ const FixedToolsComponent = props => {
                 </ButtonGroup>
             </InputGroup>
 
-            {/* Group/Ungroup */}
+            {/* Group/Ungroup  组合/拆散*/}
             {isVector(props.format) ?
                 <InputGroup className={styles.modDashedBorder}>
                     <LabeledIconButton
@@ -179,7 +179,7 @@ const FixedToolsComponent = props => {
                 </InputGroup> : null
             }
 
-            {/* Forward/Backward */}
+            {/* Forward/Backward  前后*/}
             {isVector(props.format) ?
                 <InputGroup className={styles.modDashedBorder}>
                     <LabeledIconButton
@@ -229,6 +229,7 @@ const FixedToolsComponent = props => {
                     </InputGroup> */}
                 </MediaQuery> : null
             }
+            {/* 更多 */}
             {isVector(props.format) ?
                 <MediaQuery maxWidth={layout.fullSizeEditorMinWidth - 1}>
                     <InputGroup>

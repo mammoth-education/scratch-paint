@@ -10,7 +10,7 @@ $border-radius: .25rem;
     border-radius: $border-radius;
     outline: none;
     background: none;
-    padding: $grid-unit;
+    /* padding: $grid-unit; */
     font-size: 0.85rem;
     transition: 0.2s;
 }
@@ -39,4 +39,9 @@ img.tool-select-icon {
     .mod-tool-select {
         margin: 0;
     }
+}
+@media only screen and  (min-width: 1024px) {
+  .mod-tool-select {
+    padding: $grid-unit;
+  }
 }
