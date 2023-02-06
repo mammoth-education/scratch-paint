@@ -12,7 +12,7 @@
 }
 
 [dir="ltr"] .mod-dashed-border {
-    border-right: 1px dashed $ui-pane-border;
+    /* border-right: 1px dashed $ui-pane-border; */
     padding-right: calc(2 * $grid-unit);
 }
 
@@ -130,4 +130,9 @@ $border-radius: 0.25rem;
 [dir="rtl"] .menu-item-icon {
     margin-right: 0;
     margin-left: calc(2 * $grid-unit);
+}
+@media screen and (min-width: 1024px) {
+    [dir="ltr"] .mod-dashed-border {
+        border-right: 1px dashed $ui-pane-border;
+    }
 }

@@ -2,7 +2,7 @@
 @import "../../css/units.css";
 
 .mode-tools {
-    display: flex;
+    /* display: flex; */
     min-height: 3rem;
     align-items: center;
 }
@@ -14,7 +14,7 @@
 }
 
 [dir="ltr"] .mod-dashed-border {
-    border-right: 1px dashed $ui-pane-border;
+    /* border-right: 1px dashed $ui-pane-border; */
     padding-right: calc(3 * $grid-unit);
 }
 
@@ -27,4 +27,12 @@
     display: flex;
     height: 2.85rem; /* for the second row so the dashed borders are equal in size */
     align-items: center;
+}
+@media screen and (min-width: 1024px) {
+    .mode-tools{
+        display: flex;
+    }
+    [dir="ltr"] .mod-dashed-border {
+        border-right: 1px dashed $ui-pane-border;
+    }
 }

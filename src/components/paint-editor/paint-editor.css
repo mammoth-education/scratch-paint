@@ -17,6 +17,7 @@
 .editor-container-top {
     border-bottom: 1px dashed $ui-pane-border;
     padding-bottom: calc(2 * $grid-unit);
+    /* width: 12rem; */
 }
 
 .top-align-row {
@@ -27,12 +28,12 @@
     min-width: 524px;
 }
 
-.row + .row {
+.row+.row {
     margin-top: calc(2 * $grid-unit);
 }
 
 [dir="ltr"] .mod-dashed-border {
-    border-right: 1px dashed $ui-pane-border;
+    /* border-right: 1px dashed $ui-pane-border; */
     padding-right: calc(2 * $grid-unit);
 }
 
@@ -40,8 +41,10 @@
     border-left: 1px dashed $ui-pane-border;
     padding-left: calc(2 * $grid-unit);
 }
+
 .mod-labeled-icon-height {
-    height: 2.85rem; /* for the second row so the dashed borders are equal in size */
+    height: 2.85rem;
+    /* for the second row so the dashed borders are equal in size */
 }
 
 $border-radius: 0.25rem;
@@ -129,7 +132,8 @@ $border-radius: 0.25rem;
 .canvas-container {
     width: 100%;
     flex-grow: 1;
-    min-width: 402px; /* Leave room for the border */
+    min-width: 402px;
+    /* Leave room for the border */
     box-sizing: content-box;
     border: 1px solid #e8edf1;
     border-radius: .25rem;
@@ -220,7 +224,8 @@ $border-radius: 0.25rem;
 }
 
 .button-text {
-    width: 100%; /* Fixes button text wrapping in Edge */
+    width: 100%;
+    /* Fixes button text wrapping in Edge */
 }
 
 @media screen and (max-width: $full-size) {
@@ -228,14 +233,27 @@ $border-radius: 0.25rem;
         flex-direction: row;
     }
 }
+
 @media screen and (min-width: $full-size) {
     .editor-container {
         flex-direction: column;
     }
 }
+
 @media screen and (min-width: 1024px) {
-  .row {
-    display: flex;
-    
-  }
+    .row {
+        display: flex;
+    }
+    [dir="ltr"] .mod-dashed-border {
+        border-right: 1px dashed $ui-pane-border;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .editor-container-top {
+        width: 12rem;
+    }
+    .mod-labeled-icon-height{
+        margin-top: 2rem;
+    }
 }
