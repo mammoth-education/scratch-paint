@@ -28,7 +28,7 @@
     height: 2.85rem; /* for the second row so the dashed borders are equal in size */
     align-items: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .mode-tools{
         display: flex;
     }

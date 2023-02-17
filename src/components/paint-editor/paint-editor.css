@@ -238,18 +238,15 @@ $border-radius: 0.25rem;
     .editor-container {
         flex-direction: column;
     }
-}
-
-@media screen and (min-width: 1024px) {
     .row {
-        display: flex;
+        flex-wrap: wrap;
     }
     [dir="ltr"] .mod-dashed-border {
         border-right: 1px dashed $ui-pane-border;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $full-size) {
     .editor-container-top {
         width: 12rem;
     }
