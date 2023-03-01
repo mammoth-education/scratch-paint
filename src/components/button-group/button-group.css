@@ -4,4 +4,12 @@
     display: inline-flex;
     flex-direction: row;
     padding: 0 $grid-unit;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .button-group:nth-child(1)  {
+        margin-top: 0.5rem;
+        /* background-color: red; */
+    }
 }

@@ -9,6 +9,7 @@ $arrow-border-width: 14px;
     min-width: 3.5rem;
     color: $motion-primary;
     padding: .5rem;
+
 }
 
 .mod-open {
@@ -34,4 +35,9 @@ $arrow-border-width: 14px;
     transform: rotate(180deg);
     padding-bottom: 0;
     padding-top: .2rem;
+}
+@media screen and (max-width: 1024px) {
+    .dropdown {
+        margin-top: 0.5rem;
+    }
 }

@@ -36,3 +36,9 @@
         border-right: 1px dashed $ui-pane-border;
     }
 }
+
+@media screen and (max-width: $full-size) {
+    .mod-labeled-icon-height{
+        margin-left: 0 !important;
+    }
+}
