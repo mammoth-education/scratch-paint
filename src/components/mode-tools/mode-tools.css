@@ -2,9 +2,10 @@
 @import "../../css/units.css";
 
 .mode-tools {
-    /* display: flex; */
+    display: flex;
     min-height: 3rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .mode-tools-icon {
@@ -29,9 +30,7 @@
     align-items: center;
 }
 @media screen and (min-width: 1025px) {
-    .mode-tools{
-        display: flex;
-    }
+    
     [dir="ltr"] .mod-dashed-border {
         border-right: 1px dashed $ui-pane-border;
     }
