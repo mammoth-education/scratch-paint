@@ -15,7 +15,7 @@
 }
 
 .editor-container-top {
-    border-bottom: 1px dashed $ui-pane-border;
+    /* border-bottom: 1px dashed $ui-pane-border; */
     padding-bottom: calc(2 * $grid-unit);
     /* width: 12rem; */
 }
