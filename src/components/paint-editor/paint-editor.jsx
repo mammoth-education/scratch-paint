@@ -43,7 +43,9 @@ import zoomOutIcon from './icons/zoom-out.svg';
 import zoomResetIcon from './icons/zoom-reset.svg';
 
 console.log("mammoth-coding paint");
-
+if (typeof globalThis === "undefined") {
+    window.globalThis = window;
+  }
 const messages = defineMessages({
     bitmap: {
         defaultMessage: 'Convert to Bitmap',
