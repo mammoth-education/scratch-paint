@@ -85,11 +85,14 @@ class PaintEditor extends React.Component {
             'handleSetSelectedItems',
             'handleZoomIn',
             'handleZoomOut',
-            'handleZoomReset'
+            'handleZoomReset',
+            'onSwitchToBitmap',
+            'onSwitchToVector'
         ]);
         this.state = {
             canvas: null,
-            colorInfo: null
+            colorInfo: null,
+            vector: false,
         };
         this.props.setLayout(this.props.rtl ? 'rtl' : 'ltr');
     }
@@ -303,6 +306,20 @@ class PaintEditor extends React.Component {
         clearInterval(this.intervalId);
         this.setState({colorInfo: null});
     }
+    onSwitchToBitmap(){
+        let vector = this.state.vector;
+        this.props.handleSwitchToBitmap()
+        this.setState({
+            vector: !vector
+        })
+    }
+    onSwitchToVector(){
+        let vector = this.state.vector;
+        this.props.handleSwitchToVector()
+        this.setState({
+            vector: !vector
+        })
+    }
     render () {
         return (
             <PaintEditorComponent
@@ -324,14 +341,15 @@ class PaintEditor extends React.Component {
                 textArea={this.state.textArea}
                 zoomLevelId={this.props.zoomLevelId}
                 onRedo={this.props.onRedo}
-                onSwitchToBitmap={this.props.handleSwitchToBitmap}
-                onSwitchToVector={this.props.handleSwitchToVector}
+                onSwitchToBitmap={this.onSwitchToBitmap}
+                onSwitchToVector={this.onSwitchToVector}
                 onUndo={this.props.onUndo}
                 onUpdateImage={this.props.onUpdateImage}
                 onUpdateName={this.props.onUpdateName}
                 onZoomIn={this.handleZoomIn}
                 onZoomOut={this.handleZoomOut}
                 onZoomReset={this.handleZoomReset}
+                vector={this.state.vector}
             />
         );
     }

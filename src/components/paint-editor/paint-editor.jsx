@@ -87,6 +87,7 @@ const PaintEditorComponent = props => (
                                 styles.modDashedBorder,
                                 styles.modLabeledIconHeight
                             )}
+                            
                         >
                             {/* fill */}
                             <FillColorIndicatorComponent
@@ -116,6 +117,7 @@ const PaintEditorComponent = props => (
                                     styles.modDashedBorder,
                                     styles.modLabeledIconHeight
                                 )}
+                                vector={props.vector}
                             >
                                 {/* fill */}
                                 <FillColorIndicatorComponent

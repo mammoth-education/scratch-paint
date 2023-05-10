@@ -6,7 +6,7 @@ import styles from './input-group.css';
 
 const InputGroup = props => (
     <div
-        className={classNames(props.className, styles.inputGroup, {
+        className={classNames(props.className, props.vector ? styles.inputGroupBitmap : styles.inputGroup, {
             [styles.disabled]: props.disabled
         })}
         dir={props.rtl ? 'rtl' : ''}
