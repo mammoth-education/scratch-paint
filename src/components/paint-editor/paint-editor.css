@@ -259,3 +259,9 @@ $border-radius: 0.25rem;
         margin-left: 0.5rem;
     }
 }
+
+@media screen and (max-width: 780px) {
+    .top-align-row {
+        min-width: 460px;
+    }
+}
